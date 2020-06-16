@@ -6,33 +6,27 @@
 ### Q1 | Describe the architecture of a typical Rails application. (200-300)
 Rails applications can be said to follow two architectural design patterns. These two design patterns are Monolithic application and MVC. A monolithic application as a oppose to a micro-services application is an app that is formed from one whole code base. It provides all of its functionality within itself. This differs form a micro-services style app where the app is formed by combining lots of little apps that work together to form a whole. While there is some debate on whether rails follows a true MVC pattern it is easy to say that it employs the principles of MVC heavily. MVC stands for Model, View, Controller; It is a pattern that splits up the large monolithic app into three related sub systems. The Model is responsible for manipulating the records within the applications database. This includes adding, editing or updating and removing them. The View takes information retrieved from the the model and renders it into a human accessible display. In rails this mainly takes the form of rendering the various web pages that are requested by a user. Finally the Controller is responsible for orchestrating the communication between the Model and the View. It is also the interface for the user. The user will request information, the Controller receives that request in the form of a route or HTTP request and then requests the information required from the model send it to the view to be rendered and then returns it to the user.
 #### [Sources]---
-1. [Advanced Ruby on Rails Architecture Way - Anastasiia Khmelovska](https://coaxsoft.com/blog/advanced-rails-architecture-way/)
+1. [Advanced Ruby on Rails Architecture Way | Anastasiia Khmelovska](https://coaxsoft.com/blog/advanced-rails-architecture-way/)
 2. [Episode #057 - Getting Started - Ruby on Rails - Architectural Overview | Driftiing Ruby](https://www.youtube.com/watch?v=9PAN-dvROl4)
-3. [name](link)
-4. [name](link)
-5. [name](link)
 
 ### Q2 | Identify a database commonly used in web applications (including Rails) and discuss the pros and cons of this database (150-250)
-
+###### PostgreSQL | Pros and Cons
+When comparing the Pros and Cons of Postgres, it is useful to compare the database to other options out there. Postgres by default uses SQL to retrieve information from a relational database. A relational database is one with a strong schema meaning the data is organised into strict tables consisting of rows (the data entries) and columns (the types of information that makes up an entry) all information in a table will all be uniform. And more complicated information searches can be performed by "joining" related tables. This means that even if there is no information for a particular column for one row, the entry still has that column as part of its information. It makes it very easy to make sure that data retrieved from a relational database is going to match what your functions require as input. This differs from NoSQL databases or non relational databases. NoSQL databases forgo all the tables and forced uniformity of the data in favour of storing information information in collections of documents. These documents have a similar notation to that of a hash. The main difference here is that all documents are not forced to have the same keys. This leads to make a lot of operations performed on the database take less time as there are less checks and conventions to adhere to but means that you can't be certain of the properties being tracked by documents within a collection.
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Comparison of PostgreSQL and MongoDB | Lorenz Stadler](https://www.youtube.com/watch?v=eM7hzKwvTq8)
+2. [Pros and Cons of using PostgreSQL for Application Development | Stuti Dhruv](https://www.aalpha.net/blog/pros-and-cons-of-using-postgresql-for-application-development/)
+3. [The Pros and Cons of 8 Popular Databases | Cody Arsenault](https://www.keycdn.com/blog/popular-databases#4-postgresql)
 
 ---
 # *ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement.*---
 ---
 
 ### Q3 | Discuss the implementation of Agile project management methodology (200-300)
-
+Agile is just a project management style that helps to deliver products with changing end goals in a rapid and predictable pace. It achieves this by focusing on short term planing of achievable goals that bring the most value out of a given product. It is implemented by time boxing a (typically) two week period of time were a a development team will produce a working product that implements as many of the highest priority features as feasibly possible at the end of that period. The repeating that cycle with the next most important feature set again and again until the project is complete. It avoids the slowdowns of a traditional waterfall method by dedicating a core team of generalists that can work on many facets of the focused features at once. It also ensure the client gets exactly what they want even if what they want changes over the development cycle by closely involving the client, letting them determine what features bring the most value. Combining all this together results in a team that is more productive and delivers predictable value. This is because the people on the team are multi talented individuals that are all capable of working on any part of the project whilst producing a functional product every two weeks. Additionally as a client, you can see the product progress as you have a theoretically complete product every two and can decide to pivot or complete the project every short sprint.
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Agile Foundations | Doug Rose](https://www.linkedin.com/learning/agile-foundations)
+2. [Agile Project Management: Scrum & Sprint Demystified | Project Management Videos](https://www.youtube.com/watch?v=DvBKevrItcc)
+3. [The Ultimate Guide to Implementing Agile Project Management (and Scrum) | Jory MacKay ](https://plan.io/blog/ultimate-guide-to-implementing-agile-project-management-and-scrum/)
 
 ### Q4 | Provide an overview and description of a standard source control workflow (100-200)
 
