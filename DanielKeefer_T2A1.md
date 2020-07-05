@@ -38,7 +38,13 @@ A source control flow is typically based around the release schedule of the soft
 3. [Comparing Workflows | Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows)
 
 ### Q5 | Provide an overview and description of a standard software testing process (e.g. manual testing) (100-200)
-A software testing process is comprised of several phases: Plan, Create, Prepare, Execute, Result. Often refered to as a S
+A software testing process is comprised of several phases: Plan, Create, Prepare, Execute, Result. Often referred to as a Software Testing Life Cycle (STLC). The planning phase involves analysing what is going to be tested, whether it is possible to test whatever aspect of the software you are investigating. What risks and cost are involved with the testing and finally what resources and materials will be required as part of the test.
+
+The Create phase is about designing the test or tests. Generally this is about determining what inputs are thought to be possible to be input to the code and determining what the expected output should be to that input in relation to the requirements outlined in the planning phase.
+
+The Prepare Phase is about setting up the right environment to be able to run the tests. This includes but is not limited to seeding data, setting up a run-time environment and ensuring the testing environment does an accurate job of simulating real life.
+
+The Execute phase is self explanatory, it is the process of running the test planned and setup in the previous phases. Finally, the Results phase is about collecting the results of the tests and analysing the outcome. What passed? What failed? Why did those outcomes occur? What can be done to make the failing tests pass? These question should be answered as simply as possible in a report that can then be used in the next development cycle.
 #### [Sources]---
 1. [Software Testing Life Cycle (STLC) In Software Testing | Software Testing Material](https://www.youtube.com/watch?v=HylDB3bN6hQ)
 2. [Software Testing Process and Levels of Testing | Miktad Öztürk](https://medium.com/swlh/software-testing-process-and-levels-of-testing-4274904ce655)
@@ -67,13 +73,12 @@ A software testing process is comprised of several phases: Plan, Create, Prepare
 5. [name](link)
 
 ### Q8 | Research what your legal obligations are in relation to handling user data and how they can be met for the project (100-200)
-
+For the purpose of this question, it will be assumed that ACME Corp. does an annual turnover of more than $3 million dollars in Australia. Businesses that meet this criteria are subject to **The Privacy Act 1988**, this act is based on the 13 Australian Privacy Principles (APP). The APP describe how the responsible collection and use of privacy information is carried out. The general theme of the APP's are about transparency, accuracy, personal privacy protection and specifying what is and isn't acceptable when it come to both the methods of data collection and the situation in which it can be used for a business. Legal requirements can be met by ensure there is a clear, visible and understandable terms of service available to potential end users so they know what information is being collected and how/why it is being collected. And by ensure the project complies with the APP's.
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Privacy Law in Australia | Go To Court Lawyers](https://www.youtube.com/watch?v=MQc-UjE560A)
+2. [Privacy and data protection | How to engage in cyber policy](https://www.youtube.com/watch?v=ZNEPaGFApX4)
+3. [Data protection and privacy in Australia | McCullough Robertson](https://www.lexology.com/library/detail.aspx?g=7598b614-4431-4429-9897-c83e40682865#:~:text=There%20is%20no%20such%20requirement,which%20the%20information%20was%20collected.)
+4. [Australian Privacy Principles | Australian Government](https://www.oaic.gov.au/privacy/australian-privacy-principles/)
 
 ---
 # *ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement.*---
