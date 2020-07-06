@@ -117,11 +117,20 @@ The language used to interact with a relational database is called SQL or Struct
 ---
 
 ### Q12 | Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
+######Bubble Sort ---
+The bubble sort algorithm for sorting gets its name from the way the largest elements look like that bubble up to the end of the list. It sorts a list by looking at the first two adjacent elements and comparing them. if the second item is less than the first, their positions in the list are swapped. Then the next two items undergo the same procedure. This is repeated until the algorithm reaches the end of the list. At this stage, the largest element in the list will be correctly sorted. The algorithm then repeats the entire process again and again until it makes a pass over the entire list without having to make any swaps, at which point the list is sorted.
+
+This is a simple method that works the downside is that the more elements in a target list the longer it will take to make each pass over the list, addition more passes will need to be made over a longer list. This leads to a time complexity relationship of **O(n^2)** meaning the actions required to sort them is equal to the number of items squared actions. This is pretty terrible, the advantage the algorithm has however is that the items are sorted in place and no extra memory is required to sort the list.
+
+######Merge Sort---
+Merge sort is known as a divide and conquer algorithm. it works by calling it self recursively to first break down a large array into smaller and smaller new sub arrays until each sub array contains one item. then the original array is built back up again by comparing the the first elements of two sub arrays and placing them in order into a sorted sub array. This phase is repeated until all elements of the broken down sub arrays are "merged" together in order and the process repeats back up the sub arrays until the final sorted sub array has all the original elements in it and and is sorted.
+
+By halving the array over and over again, the algorithm doesn't have to compare each element to every other element as in Bubble sort. this drastically improves the efficiency by reduces the time complexity to **O(nLog(n))**. The relative difference in efficiency become more and more apparent with longer lists. The draw back to the algorithm however is that as it generates more arrays to then sort them, the algorithm requires more memory to hold the sub arrays. this is a space complexity of **O(n)** meaning that to sort a list that takes up **n** amount of memory a further **n** amount of space will be required to hold the sub arrays as the list is being sorted. This is a decent trade of however as computer memory is is easy to expand and time is hard to get back.
 
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
+1. [3 Levels of Sorting Algorithms - FASTEST Comparison Sort! | Kite](https://www.youtube.com/watch?v=qk7b4-iyCJ4)
+2. [Sorting Algorithms: The Difference Between Bubble Sort and Merge Sort | AnnMargaret Tutu](https://medium.com/@codeAMT/sorting-algorithms-the-difference-between-bubble-sort-and-merge-sort-bc91c3c2aff1)
+3. [Bubble & Merge Sort Algorithms | MrBrownCS](https://www.youtube.com/watch?v=EM3YC3dtMv8)
 4. [name](link)
 5. [name](link)
 
