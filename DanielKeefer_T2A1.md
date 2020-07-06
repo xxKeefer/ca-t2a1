@@ -105,13 +105,12 @@ Finally, Domain integrity is about controlling the type of data stored in an att
 3. [Enforcing data integrity in databases | Sybase Inc.](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc32300.1570/html/sqlug/sqlug300.htm)
 
 ### Q11 | Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. (100-200)
+The language used to interact with a relational database is called SQL or Structured Query Language. There a few parts to the language, but the part that concerns the manipulation of the data within the database is plainly called Data Manipulation Language, or DML. DML consists of several functions, four common functions are **SELECT, INSERT, UPDATE** and **DELETE**. Select lets you retrieve and display information from the database. Insert allows you to add entirely new information. Update allows for the editing of information already within the database. Finally, Delete allows for the the removal of no longer required records.
 
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Lesson: Relational Database Basics | Webucator](https://www.webucator.com/tutorial/learn-sql/relational-database-basics.cfm)
+2. [Structured Query Language: Manipulating Databases Using SQL | Study.com](https://study.com/academy/lesson/structured-query-language-manipulating-databases-using-sql.html)
+3. [Everything you need to know about (Relational) Databases | Lucas Olivera](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl)
 
 ---
 # *The efficiency of an app (i.e. site) and the algorithms used are of the utmost importance. The next set of questions relate to this RfQ-requirement.*---
