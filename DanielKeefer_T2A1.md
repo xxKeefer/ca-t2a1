@@ -85,13 +85,11 @@ For the purpose of this question, it will be assumed that ACME Corp. does an ann
 ---
 
 ### Q9 | Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. (100-200)
-
+There are two mains aspects to the structure of relational databases, Tables and Keys. In a relational database all information is stored on tables. They feature columns, these are the pieces of information an entry conveys. A table will also have rows, these are the individual data entries. Each table will always have a column that can be used to uniquely each row. This is known as a primary key, most commonly it takes the form of an incremental integer called an id. The primary key can then be used by referencing in in other tables. When a column references a primary key in another table it is called a foreign key. This is useful as it indicates the data belongs to or is related to some entry in another table. Complex information can be easily conveyed this way by *"joining"* tables. This is achieved by beginning a new table and assigning a primary key and then referencing the primary keys of two other tables. This is done because it allows tables to be specific and eliminates data that isn't necessary to define what the table is tracking. For example, a customers shipping address is not going to be effected by his purchase history. So a customers shipping address and purchase orders are likely to be two different tables and related by foreign keys in a joining table.
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Relational Database Concepts | Prescott Computer Guy](https://www.youtube.com/watch?v=NvrpuBAMddw)
+2. [What a Relational Database Is | Oracle Australia](https://www.oracle.com/au/database/what-is-a-relational-database/)
+3. [Introduction to Relational Database Structure and Terminology | RelationalDBDesign](https://www.relationaldbdesign.com/database-design/module2/intro-relational-database-structure.php)
 
 ### Q10 | Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database. (100-200)
 
