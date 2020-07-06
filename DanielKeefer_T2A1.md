@@ -92,13 +92,17 @@ There are two mains aspects to the structure of relational databases, Tables and
 3. [Introduction to Relational Database Structure and Terminology | RelationalDBDesign](https://www.relationaldbdesign.com/database-design/module2/intro-relational-database-structure.php)
 
 ### Q10 | Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database. (100-200)
+There are three main forms of integrity that are enforced by a relational database. Entity integrity, Referential Integrity and Domain Integrity. All the forms of Integrity are enforced by imposing specific constraints on your data to ensure data is usable inside your database.
 
+Entity integrity is about ensuring uniqueness of your data. It creates redundancy and double handling if the same data was to be duplicated. This means that no two tables should have the same name and within a table, all tuples must be able to be uniquely identified. This means if you have top update data, you don't have to look in more than one place and you don't have to update it more than once.
+
+Referential integrity is about making the relationships in your database stay consistent. this includes things like making sure no attribute is left with a nil or null value and that foreign keys cannot be deleted without deleting the data they point to. This ensures your database remains clean and that there is no malformed data. Having broken links or empty values in your data sets can lead to logic breaking expectantly.
+
+Finally, Domain integrity is about controlling the type of data stored in an attribute so that you can be sure how you can use it when retrieving it. this is implemented by restricting attributes to be of certain data type.
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Database Design 7 - Data Integrity | Caleb Curry](https://www.youtube.com/watch?v=1D_h-yFtQVo)
+2. [What is Data Integrity and Why Is It Important? | talend](https://www.talend.com/resources/what-is-data-integrity/)
+3. [Enforcing data integrity in databases | Sybase Inc.](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc32300.1570/html/sqlug/sqlug300.htm)
 
 ### Q11 | Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. (100-200)
 
