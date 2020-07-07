@@ -131,17 +131,22 @@ By halving the array over and over again, the algorithm doesn't have to compare 
 1. [3 Levels of Sorting Algorithms - FASTEST Comparison Sort! | Kite](https://www.youtube.com/watch?v=qk7b4-iyCJ4)
 2. [Sorting Algorithms: The Difference Between Bubble Sort and Merge Sort | AnnMargaret Tutu](https://medium.com/@codeAMT/sorting-algorithms-the-difference-between-bubble-sort-and-merge-sort-bc91c3c2aff1)
 3. [Bubble & Merge Sort Algorithms | MrBrownCS](https://www.youtube.com/watch?v=EM3YC3dtMv8)
-4. [name](link)
-5. [name](link)
 
 ### Q13 | 	Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
+######Linear Search---
+Linear search is a simple algorithm that brute forces it's way through a list to find a specific item. It works by taking the list your searching and looking at each element in turn and comparing it to your target. If it matches return it, otherwise look at the next item. if the item is the last in the list and it isn't equal to the target, return -1. In the best case, the target is found at the beginning of the list **O(1)**, at worst it will take **n** comparisons **O(n)**. On average linear search has a complexity **n(n+1)/2n** but at large numbers of **n** coefficients quickly become insignificant and this simplifies to a Big O of **O(n)**. This is where linear search gets it's name, its linear time complexity.
+
+######Binary Search---
+Binary search can only be performed on sorted lists, the algorithm executes thusly. It splits the array into two halves by selecting the middle value. it compares the middle to its target. If the middle is greater than the target than the top half of the array is discarded. Conversely if the middle is smaller than the target the top half is excluded. then the halving begins again with the remaining sub section of the array. This recurs until there is one remaining value. if that value is equal to the target it is returned, otherwise a value of -1 is returned. In best, worst and average cases Binary search performs with a Big O of **O(Log n)** this is because it doesn't check for equivalence to the target until there is one value. So the halving of the array doesn't stop event if the middle of the array it selects is equal to the target. The algorithm see a best case improvement for time complexity if it were to check the middle value against the target every time but it slows it down on average because it has to perform twice as many comparisons.
+
+######The Difference---
+Binary search is far quicker, this easy to see just by thinking about it. If linear search doesn't find the target on the first comparison it still has every other element in the list to check. With binary search, it excludes half of the remain possible locations for the target every time it makes a comparison which is where it derives its **O(Log n)** time complexity. the draw back of binary search is that the data set must be sorted before hand.
 
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Binary Search Big-O Analysis | musicAlgo](https://www.youtube.com/watch?v=OIQgJU-Xt3Q)
+2. [Algorithms Lesson 5: Linear and Binary Searching | xoaxdotnet](https://www.youtube.com/watch?v=wNVCJj642n4)
+3. [Linear Search Vs Binary Search | Promila Ghosh Monty](https://hackernoon.com/linear-search-vs-binary-search-ce7c56f8feb1)
+4. [Linear Search vs Binary Search  GeeksforGeeks](https://www.geeksforgeeks.org/linear-search-vs-binary-search/)
 
 ---
 # *Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.*---
