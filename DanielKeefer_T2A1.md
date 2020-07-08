@@ -152,26 +152,74 @@ Binary search is far quicker, this easy to see just by thinking about it. If lin
 # *Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.*---
 ---
 
-### Q14 | Conduct research into a marketplace website (app) and answer the following parts:
+### Q14 | Conduct research into a marketplace website (_**Amazon**_) and answer the following parts:
 
-##### a. List and describe the software used by the app. (50-100)
+##### a. List and describe the software used by _**Amazon**_. (50-100)
+A company the size of Amazon uses a variety of technologies to power it's online presence. From front end techs like the Angular framework to back end things like JAVA for back end. Software like MySQL and DynamoDB is utilised for data storage. Amazon offers a whole bunch of tools for developers and most certainly other tools are being used. AWS for hosting the website, perhaps Docker for testing.
 
-##### b. Describe the hardware used to host the app. (50-100)
+##### b. Describe the hardware used to host _**Amazon**_. (50-100)
+It will be almost a certainty that Amazon will be using a distributed network. Server banks in many locations around the world to reduce local customers load time. This know as cloud hosting, numerous physical servers in numerous location power a virtual machine that handles all the requests made to the website. This differs from single server hosting where a single machine powers the entire site. The benefits gained from the more complicated cloud set up include reliability and scalability. If one machine is taken offline, the others can take up the slack, need more processing power? Add another machine to your cloud to handle the load.
 
-##### c. Describe the interaction of technologies within the app. (50-100)
+##### c. Describe the interaction of technologies within _**Amazon**_. (50-100)
+Front end techs like HTML, CSS and Javascript along with various frameworks like Angular are utilised to display information is an easy to understand and aesthetic manner so customer can interact with it. MySQL and DynamoDB are used to store information about customers and there requests. and finally it is tied all together with back end technologies like web frameworks GWT which is written with JAVA to control all the activity on the site.
 
-##### d. Describe the way data is structured within the app.
+##### d. Describe the way data is structured within _**Amazon**_. (50-100)
+Data is most likely to be structured in a relational database. This means data will held in various tables related to specific entities using or being displayed on the site. An identifying key will be used to keep track of the attributes associated with it and then the keys from different tables can be linked to other tables to show relationships between data sets.
 
-##### e. Identify entities which must be tracked by the app.
+##### e. Identify entities which must be tracked by _**Amazon**_. (50-100)
+- **Users**: Entities who use the website to purchase products or subscriptions.
+- **Sellers**: Entities who use the website to sell products.
+- **Contact**: Tracks the contact details for entities
+- **Products**: Information about items being sold.
+- **Reviews**: Reviews posted by Users about Products
+- **Subscriptions**: Information about subscriptions offered and who is signed up.
+- **Orders**: Shipping and payment information about Items Purchased.
+- **Returns**: Shipping information and details about who/why a product was returned.
 
 ##### f. Identify the relationships and associations between the entities you have identified in part (e). (50-100)
 
-##### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model). (50-100)
+---**Users**---
+- has many Orders
+- has one set of contact details
+- has many Reviews
+- has many subscriptions
 
+---**Sellers**---
+- has one set of contact details
+- has many Orders
+- has many products
+
+---**Products**---
+- belongs to a Seller
+- has many Reviews
+- belongs to many Orders
+
+---**Orders**---
+- has many Products
+- belongs to a User
+- has one seller
+- has one return
+
+---**Subscriptions**---
+- belongs to a user
+
+---**Reviews**---
+- belongs to a user
+- belongs to a product
+
+---**Returns**---
+- belongs to an order
+
+---**Contact**---
+- belongs to a user or seller
+
+##### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of _**Amazon**_ (assuming a relational database model). (50-100)
+[Click here for Daniel's ERD design for Amazon](https://dbdiagram.io/d/5f050b050425da461f04612b)
+
+![Potential ERD for Amazon](Amazon_.png)
 
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Amazon | Stackshare](https://stackshare.io/amazon/amazon)
+2. [What is the technology stack used by Amazon? | Quora](https://www.quora.com/What-is-the-technology-stack-used-by-Amazon)
+3. [What is Cloud Hosting and how does it work? | MARTIN AUSTWICK](https://www.wirehive.com/thoughts/cloud-hosting-work/)
+4. [17 Popular Java Frameworks (2019 edition): Pros, cons, and more | Anna Monus](https://raygun.com/blog/popular-java-frameworks/)
