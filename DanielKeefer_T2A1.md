@@ -55,13 +55,11 @@ The Execute phase is self explanatory, it is the process of running the test pla
 ---
 
 ### Q6 | Discuss and analyse requirements related to information system security and how they relate to the project (100-200)
-
+The requirements for Information security is commonly refered to as the CIA triad. The letters stand for **Confidentiality, Integrity** and **Accessibility**. Infosec is very important for a marketplace as everything in the triad can effect all users. For example, information pertaining to a individual user should be made confidential so that only the people that need to know have access. If a product of high value is being shipped you would want the world so see when it will arrive at the user's address as it might be stolen. Also you want integrity, you don't want the price to randomly change without the seller doing it themselves. Finally the data needs to be accessible so it can be updated, added to or removed by an authorised user at will. A customer might change address and need to update for example.
 #### [Sources]---
-1. [name](link)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+1. [Information systems security | FIT Mostar](https://www.youtube.com/watch?v=8caqok3ah8o)
+2. [An Introduction to Cyber Security Basics for Beginner | Shambhoo Kumar](https://geekflare.com/understanding-cybersecurity/)
+3. [Introduction, Threat Models | MIT OpenCourseWare](https://www.youtube.com/watch?v=GqmQg-cszw4)
 
 ### Q7 | Discuss common methods of protecting information and data and how you would apply them to the project (100-200)
 
