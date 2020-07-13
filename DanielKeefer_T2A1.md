@@ -72,10 +72,7 @@ Ruby on rails by default features encryption and user_access_tokens to verify a 
 
 #### [Sources]---
 1. [6 Essential Data Protection Methods | GDPR Informer](https://gdprinformer.com/gdpr-articles/6-essential-data-protection-methods)
-2. [name](link)
-3. [name](link)
-4. [name](link)
-5. [name](link)
+2. [Information systems security | FIT Mostar](https://www.youtube.com/watch?v=8caqok3ah8o)
 
 ### Q8 | Research what your legal obligations are in relation to handling user data and how they can be met for the project (100-200)
 For the purpose of this question, it will be assumed that ACME Corp. does an annual turnover of more than $3 million dollars in Australia. Businesses that meet this criteria are subject to **The Privacy Act 1988**, this act is based on the 13 Australian Privacy Principles (APP). The APP describe how the responsible collection and use of privacy information is carried out. The general theme of the APP's are about transparency, accuracy, personal privacy protection and specifying what is and isn't acceptable when it come to both the methods of data collection and the situation in which it can be used for a business. Legal requirements can be met by ensure there is a clear, visible and understandable terms of service available to potential end users so they know what information is being collected and how/why it is being collected. And by ensure the project complies with the APP's.
