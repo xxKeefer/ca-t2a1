@@ -31,7 +31,7 @@ Agile is just a project management style that helps to deliver products with cha
 ### Q4 | Provide an overview and description of a standard source control workflow (100-200)
 A source control flow is typically based around the release schedule of the software. One workflow that is popular is know as release workflow. This git work pattern is a trunk based git work flow. This means that branches that are created from the main branch are as short lived as possible before being merged back to main. This means that any amount of devs can branch out and develop code as need and cause less conflict on merge. When it comes time for a new release a branch is created from main and left as is, that code is used as the release. When the next release comes out the old release branch is discarded and a new one is created that is a copy of the main branch in its state at release. This doesn't make much sense, discarding the previous branch. what's the point? The final part of release flow is how hotfixes are handled. if there is a priority one bug found on the latest release, the fix for the bug is developed as a branch on main. when the fix is ready and merged back to main, that pull request is also then cherry picked for just the code that provides the fix and then merged to the current release. The benefit of this little bit of extra effort is that it ensures all bugs are fixed on main first meaning that those bugs won't appear again in the next release. if it were just worked on as a branch of the current release it could potentially lead to forgetting to fix the code in main and then the bug would appear a second time in the next release.
 
-![release flow diagram](release-flow.png)
+![release flow diagram](images/release-flow.png)
 #### [Sources]---
 1. [Professional Guides: Workflow Strategies | GitHub Training & Guides](https://www.youtube.com/watch?v=aJnFGMclhU8)
 2. [The Workflow of Version Control | Git Tower](https://www.git-tower.com/learn/cheat-sheets/vcs-workflow)
@@ -220,7 +220,7 @@ Data is most likely to be structured in a relational database. This means data w
 
 **NOTE!** The relationships might be hard to see in the picture but if you click on the link *above* and got to the ERD online you can hover over tables or individual relationship lines to see the relation ship. dbdiagram.io use the 1 and * to denote 'one' and 'many', with many to many relations shown with the use of a joining table that is two, one-many relations.
 
-![Potential ERD for Amazon](Amazon_.png)
+![Potential ERD for Amazon](images/Amazon_.png)
 
 #### [Sources]---
 1. [Amazon | Stackshare](https://stackshare.io/amazon/amazon)
