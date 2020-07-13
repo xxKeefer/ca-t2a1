@@ -56,15 +56,22 @@ The Execute phase is self explanatory, it is the process of running the test pla
 
 ### Q6 | Discuss and analyse requirements related to information system security and how they relate to the project (100-200)
 The requirements for Information security is commonly refered to as the CIA triad. The letters stand for **Confidentiality, Integrity** and **Accessibility**. Infosec is very important for a marketplace as everything in the triad can effect all users. For example, information pertaining to a individual user should be made confidential so that only the people that need to know have access. If a product of high value is being shipped you would want the world so see when it will arrive at the user's address as it might be stolen. Also you want integrity, you don't want the price to randomly change without the seller doing it themselves. Finally the data needs to be accessible so it can be updated, added to or removed by an authorised user at will. A customer might change address and need to update for example.
+
 #### [Sources]---
 1. [Information systems security | FIT Mostar](https://www.youtube.com/watch?v=8caqok3ah8o)
 2. [An Introduction to Cyber Security Basics for Beginner | Shambhoo Kumar](https://geekflare.com/understanding-cybersecurity/)
 3. [Introduction, Threat Models | MIT OpenCourseWare](https://www.youtube.com/watch?v=GqmQg-cszw4)
 
 ### Q7 | Discuss common methods of protecting information and data and how you would apply them to the project (100-200)
+There are three parts to the CIA triad and different methods are employed to ensure information security is maintained. Access to data is very important but defining who can access it is even more so. By implementing Usernames and Passwords or other forms of *access control* you can prevent unauthorised access. Making sure data is properly deleted after it no longer required can also ensure the data does not fall privy to eyes that were not meant to see it. *Encryption* is another method for protecting data. by rendering the information unreadable to all but have the key to decrypt it. Making sure you have multiple *back ups* of data can ensure integrity and access if one were to be destroyed or stolen and there are services like Amazon S3 that ensure a 99.9999% uptime which is also a method of ensuring its security.
+
+**Application to the project**\
+Ruby on rails by default features encryption and user_access_tokens to verify a user. A Gem called Devise would be implemented to ensure access control with passwords and finally using Amazon S3 will ensure integrity for the data being stored.
+
+
 
 #### [Sources]---
-1. [name](link)
+1. [6 Essential Data Protection Methods | GDPR Informer](https://gdprinformer.com/gdpr-articles/6-essential-data-protection-methods)
 2. [name](link)
 3. [name](link)
 4. [name](link)
@@ -115,12 +122,12 @@ The language used to interact with a relational database is called SQL or Struct
 ---
 
 ### Q12 | Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
-######Bubble Sort ---
+###### Bubble Sort ---
 The bubble sort algorithm for sorting gets its name from the way the largest elements look like that bubble up to the end of the list. It sorts a list by looking at the first two adjacent elements and comparing them. if the second item is less than the first, their positions in the list are swapped. Then the next two items undergo the same procedure. This is repeated until the algorithm reaches the end of the list. At this stage, the largest element in the list will be correctly sorted. The algorithm then repeats the entire process again and again until it makes a pass over the entire list without having to make any swaps, at which point the list is sorted.
 
 This is a simple method that works the downside is that the more elements in a target list the longer it will take to make each pass over the list, addition more passes will need to be made over a longer list. This leads to a time complexity relationship of **O(n^2)** meaning the actions required to sort them is equal to the number of items squared actions. This is pretty terrible, the advantage the algorithm has however is that the items are sorted in place and no extra memory is required to sort the list.
 
-######Merge Sort---
+###### Merge Sort---
 Merge sort is known as a divide and conquer algorithm. it works by calling it self recursively to first break down a large array into smaller and smaller new sub arrays until each sub array contains one item. then the original array is built back up again by comparing the the first elements of two sub arrays and placing them in order into a sorted sub array. This phase is repeated until all elements of the broken down sub arrays are "merged" together in order and the process repeats back up the sub arrays until the final sorted sub array has all the original elements in it and and is sorted.
 
 By halving the array over and over again, the algorithm doesn't have to compare each element to every other element as in Bubble sort. this drastically improves the efficiency by reduces the time complexity to **O(nLog(n))**. The relative difference in efficiency become more and more apparent with longer lists. The draw back to the algorithm however is that as it generates more arrays to then sort them, the algorithm requires more memory to hold the sub arrays. this is a space complexity of **O(n)** meaning that to sort a list that takes up **n** amount of memory a further **n** amount of space will be required to hold the sub arrays as the list is being sorted. This is a decent trade of however as computer memory is is easy to expand and time is hard to get back.
@@ -213,6 +220,8 @@ Data is most likely to be structured in a relational database. This means data w
 
 ##### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of _**Amazon**_ (assuming a relational database model). (50-100)
 [Click here for Daniel's ERD design for Amazon](https://dbdiagram.io/d/5f050b050425da461f04612b)
+
+**NOTE!** The relationships might be hard to see in the picture but if you click on the link *above* and got to the ERD online you can hover over tables or individual relationship lines to see the relation ship. dbdiagram.io use the 1 and * to denote 'one' and 'many', with many to many relations shown with the use of a joining table that is two, one-many relations.
 
 ![Potential ERD for Amazon](Amazon_.png)
 
