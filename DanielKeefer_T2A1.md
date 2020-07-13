@@ -1,7 +1,7 @@
 
----
+
 # *ACME Corporation is looking for devs with an understanding of Rails. The following set of questions relate to this RfQ-requirement.*---
----
+
 
 ### Q1 | Describe the architecture of a typical Rails application. (200-300)
 Rails applications can be said to follow two architectural design patterns. These two design patterns are Monolithic application and MVC. A monolithic application as a oppose to a micro-services application is an app that is formed from one whole code base. It provides all of its functionality within itself. This differs form a micro-services style app where the app is formed by combining lots of little apps that work together to form a whole. While there is some debate on whether rails follows a true MVC pattern it is easy to say that it employs the principles of MVC heavily. MVC stands for Model, View, Controller; It is a pattern that splits up the large monolithic app into three related sub systems. The Model is responsible for manipulating the records within the applications database. This includes adding, editing or updating and removing them. The View takes information retrieved from the the model and renders it into a human accessible display. In rails this mainly takes the form of rendering the various web pages that are requested by a user. Finally the Controller is responsible for orchestrating the communication between the Model and the View. It is also the interface for the user. The user will request information, the Controller receives that request in the form of a route or HTTP request and then requests the information required from the model send it to the view to be rendered and then returns it to the user.
@@ -17,9 +17,9 @@ When comparing the Pros and Cons of Postgres, it is useful to compare the databa
 2. [Pros and Cons of using PostgreSQL for Application Development | Stuti Dhruv](https://www.aalpha.net/blog/pros-and-cons-of-using-postgresql-for-application-development/)
 3. [The Pros and Cons of 8 Popular Databases | Cody Arsenault](https://www.keycdn.com/blog/popular-databases#4-postgresql)
 
----
+
 # *ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement.*---
----
+
 
 ### Q3 | Discuss the implementation of Agile project management methodology (200-300)
 Agile is just a project management style that helps to deliver products with changing end goals in a rapid and predictable pace. It achieves this by focusing on short term planing of achievable goals that bring the most value out of a given product. It is implemented by time boxing a (typically) two week period of time were a a development team will produce a working product that implements as many of the highest priority features as feasibly possible at the end of that period. The repeating that cycle with the next most important feature set again and again until the project is complete. It avoids the slowdowns of a traditional waterfall method by dedicating a core team of generalists that can work on many facets of the focused features at once. It also ensure the client gets exactly what they want even if what they want changes over the development cycle by closely involving the client, letting them determine what features bring the most value. Combining all this together results in a team that is more productive and delivers predictable value. This is because the people on the team are multi talented individuals that are all capable of working on any part of the project whilst producing a functional product every two weeks. Additionally as a client, you can see the product progress as you have a theoretically complete product every two and can decide to pivot or complete the project every short sprint.
@@ -50,9 +50,9 @@ The Execute phase is self explanatory, it is the process of running the test pla
 2. [Software Testing Process and Levels of Testing | Miktad Öztürk](https://medium.com/swlh/software-testing-process-and-levels-of-testing-4274904ce655)
 3. [What is Software Testing? | Ulf Eriksson](https://reqtest.com/testing-blog/the-a-to-z-guide-to-the-software-testing-process/)
 
----
+
 # *Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.*---
----
+
 
 ### Q6 | Discuss and analyse requirements related to information system security and how they relate to the project (100-200)
 The requirements for Information security is commonly refered to as the CIA triad. The letters stand for **Confidentiality, Integrity** and **Accessibility**. Infosec is very important for a marketplace as everything in the triad can effect all users. For example, information pertaining to a individual user should be made confidential so that only the people that need to know have access. If a product of high value is being shipped you would want the world so see when it will arrive at the user's address as it might be stolen. Also you want integrity, you don't want the price to randomly change without the seller doing it themselves. Finally the data needs to be accessible so it can be updated, added to or removed by an authorised user at will. A customer might change address and need to update for example.
@@ -68,8 +68,6 @@ There are three parts to the CIA triad and different methods are employed to ens
 **Application to the project**\
 Ruby on rails by default features encryption and user_access_tokens to verify a user. A Gem called Devise would be implemented to ensure access control with passwords and finally using Amazon S3 will ensure integrity for the data being stored.
 
-
-
 #### [Sources]---
 1. [6 Essential Data Protection Methods | GDPR Informer](https://gdprinformer.com/gdpr-articles/6-essential-data-protection-methods)
 2. [Information systems security | FIT Mostar](https://www.youtube.com/watch?v=8caqok3ah8o)
@@ -82,9 +80,9 @@ For the purpose of this question, it will be assumed that ACME Corp. does an ann
 3. [Data protection and privacy in Australia | McCullough Robertson](https://www.lexology.com/library/detail.aspx?g=7598b614-4431-4429-9897-c83e40682865#:~:text=There%20is%20no%20such%20requirement,which%20the%20information%20was%20collected.)
 4. [Australian Privacy Principles | Australian Government](https://www.oaic.gov.au/privacy/australian-privacy-principles/)
 
----
+
 # *ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement.*---
----
+
 
 ### Q9 | Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. (100-200)
 There are two mains aspects to the structure of relational databases, Tables and Keys. In a relational database all information is stored on tables. They feature columns, these are the pieces of information an entry conveys. A table will also have rows, these are the individual data entries. Each table will always have a column that can be used to uniquely each row. This is known as a primary key, most commonly it takes the form of an incremental integer called an id. The primary key can then be used by referencing in in other tables. When a column references a primary key in another table it is called a foreign key. This is useful as it indicates the data belongs to or is related to some entry in another table. Complex information can be easily conveyed this way by *"joining"* tables. This is achieved by beginning a new table and assigning a primary key and then referencing the primary keys of two other tables. This is done because it allows tables to be specific and eliminates data that isn't necessary to define what the table is tracking. For example, a customers shipping address is not going to be effected by his purchase history. So a customers shipping address and purchase orders are likely to be two different tables and related by foreign keys in a joining table.
@@ -135,13 +133,13 @@ By halving the array over and over again, the algorithm doesn't have to compare 
 3. [Bubble & Merge Sort Algorithms | MrBrownCS](https://www.youtube.com/watch?v=EM3YC3dtMv8)
 
 ### Q13 | 	Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
-######Linear Search---
+###### Linear Search---
 Linear search is a simple algorithm that brute forces it's way through a list to find a specific item. It works by taking the list your searching and looking at each element in turn and comparing it to your target. If it matches return it, otherwise look at the next item. if the item is the last in the list and it isn't equal to the target, return -1. In the best case, the target is found at the beginning of the list **O(1)**, at worst it will take **n** comparisons **O(n)**. On average linear search has a complexity **n(n+1)/2n** but at large numbers of **n** coefficients quickly become insignificant and this simplifies to a Big O of **O(n)**. This is where linear search gets it's name, its linear time complexity.
 
-######Binary Search---
+###### Binary Search---
 Binary search can only be performed on sorted lists, the algorithm executes thusly. It splits the array into two halves by selecting the middle value. it compares the middle to its target. If the middle is greater than the target than the top half of the array is discarded. Conversely if the middle is smaller than the target the top half is excluded. then the halving begins again with the remaining sub section of the array. This recurs until there is one remaining value. if that value is equal to the target it is returned, otherwise a value of -1 is returned. In best, worst and average cases Binary search performs with a Big O of **O(Log n)** this is because it doesn't check for equivalence to the target until there is one value. So the halving of the array doesn't stop event if the middle of the array it selects is equal to the target. The algorithm see a best case improvement for time complexity if it were to check the middle value against the target every time but it slows it down on average because it has to perform twice as many comparisons.
 
-######The Difference---
+###### The Difference---
 Binary search is far quicker, this easy to see just by thinking about it. If linear search doesn't find the target on the first comparison it still has every other element in the list to check. With binary search, it excludes half of the remain possible locations for the target every time it makes a comparison which is where it derives its **O(Log n)** time complexity. the draw back of binary search is that the data set must be sorted before hand.
 
 #### [Sources]---
@@ -150,9 +148,9 @@ Binary search is far quicker, this easy to see just by thinking about it. If lin
 3. [Linear Search Vs Binary Search | Promila Ghosh Monty](https://hackernoon.com/linear-search-vs-binary-search-ce7c56f8feb1)
 4. [Linear Search vs Binary Search  GeeksforGeeks](https://www.geeksforgeeks.org/linear-search-vs-binary-search/)
 
----
+
 # *Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.*---
----
+
 
 ### Q14 | Conduct research into a marketplace website (_**Amazon**_) and answer the following parts:
 
