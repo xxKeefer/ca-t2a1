@@ -112,9 +112,9 @@ The language used to interact with a relational database is called SQL or Struct
 2. [Structured Query Language: Manipulating Databases Using SQL | Study.com](https://study.com/academy/lesson/structured-query-language-manipulating-databases-using-sql.html)
 3. [Everything you need to know about (Relational) Databases | Lucas Olivera](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl)
 
----
+
 # *The efficiency of an app (i.e. site) and the algorithms used are of the utmost importance. The next set of questions relate to this RfQ-requirement.*---
----
+
 
 ### Q12 | Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
 ###### Bubble Sort ---
